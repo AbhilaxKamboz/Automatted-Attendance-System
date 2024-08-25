@@ -9,7 +9,8 @@ root.title("Automated Attendance System")
 mainClr= "maroon"
 burronClr="#0D47A1"
 root.geometry("700x570")
-image_path = "img/faceback.png"  # Replace with your image path
+# root.geometry('%dx%d+%d+%d' % (1000, 630, 100, 10))
+image_path = "img/faceback.png"
 image = Image.open(image_path)
 background_image = ImageTk.PhotoImage(image)
 
@@ -21,10 +22,10 @@ background_label.place(x=0, y=0, relwidth=1, relheight=1)
 def frontPage():
     import cv2
     # import playsound
-    img = cv2.imread("img/mainback.png")
+    img = cv2.imread("img/homepage/homepage.jpg")
     cv2.imshow("Main Page",img)
     cv2.waitKey(1000)
-    img1=cv2.imread("img/mainback1.jpg")
+    img1=cv2.imread("img/homepage/Homepage1.jpg")
     cv2.imshow("Main Page",img1)
     cv2.waitKey(1000)
     # playsound.playsound('voice/start.mp3')
